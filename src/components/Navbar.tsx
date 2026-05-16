@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -7,14 +6,13 @@ function Navbar() {
       <h1 className="text-2xl font-bold">Logo</h1>
       <ul className="flex items-center space-x-4">
         <li>
-          <Link to="/" className="hover:text-gray-300">Home</Link>
+          <a href="/" className="hover:text-gray-300">Home</a>
         </li>
         <li>
-          <Link to="/services" className="hover:text-gray-300">Services</Link>
+          <a href="/services" className="hover:text-gray-300">Services</a>
         </li>
       </ul>
     </nav>
   );
 }
-
 export default Navbar;
