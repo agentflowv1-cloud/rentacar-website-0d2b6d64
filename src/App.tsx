@@ -1,16 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import './App.css';
-
+import Footer from './components/Footer';
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="min-h-screen flex flex-col">
+      <div className="flex-1"></div>
+      <Footer />
+    </div>
   );
 }
-
 export default App;
