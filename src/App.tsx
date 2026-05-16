@@ -1,9 +1,13 @@
 import React from 'react';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
 import Footer from './components/Footer';
+
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      <div className="flex-1"></div>
+      <Navbar />
+      <Home />
       <Footer />
     </div>
   );
